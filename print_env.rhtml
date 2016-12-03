@@ -1,0 +1,25 @@
+<% require "ostruct"; %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>whatever</title>
+    </head>
+    <body>
+        <h2>Hello, <%= myenv["USER"] %>!</h2>
+        <%# another comment
+        over
+        several
+        lines%>
+        <h3>Environment:</h3>
+        <ul>
+            <% myenv.each do |key, value| %>
+                <%# this is also a comment %>
+                <% if not value.nil? then %>
+                    <li>
+                        <b><%= key %></b> = <em><%= value.dump %></em>
+                    </li>
+                <% end %>
+            <% end %>
+        </ul>
+    </body>
+</html>
