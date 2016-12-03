@@ -3,15 +3,15 @@ LighTemplate is a tiny library abstraction for ERB-like HTML templates.
 
 Usage for `lightemplate-ruby`:
 
-   require "lightemplate"
-   
-   tpl = LighTemplate.new("Hello, <%=name%>!")
-
-   # prints the generated code
-   puts tpl.code
-   
-   # prints the result of executing the generated code
-   puts tpl.exec({name: "world"})
+    require "lightemplate"
+    
+    tpl = LighTemplate.new("Hello, <%=name%>!")
+    
+    # prints the generated code
+    puts tpl.code
+    
+    # prints the result of executing the generated code
+    puts tpl.exec({name: "world"})
 
 
 A helper function to work with files quick and easy exists as well:
